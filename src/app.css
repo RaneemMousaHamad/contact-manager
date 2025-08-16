@@ -1,25 +1,43 @@
-#app {
-  max-width: 1280px;
+/* Main App Container */
+.app-container {
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* App Header */
+.app-container h1 {
   text-align: center;
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.preact:hover {
-  filter: drop-shadow(0 0 2em #673ab8aa);
-}
-
-.card {
-  padding: 2em;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 1rem;
+  }
+  
+  .app-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
-.read-the-docs {
-  color: #888;
+@media (max-width: 480px) {
+  .app-container {
+    padding: 0.5rem;
+  }
+  
+  .app-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
 }
